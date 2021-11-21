@@ -1,5 +1,5 @@
 {
-  "name": "N Σ O N UserBot (T.me/NeonUserbot)",
+  "name": "N I T R O UserBot (T.me/NitroUserbot)",
   "description": "Telegramdan əyləncəli və rahat işlətmək üçün telegram user bot’u",
   "logo": "https://telegra.ph/file/065f9a857b26bccd49499.jpg",
   "keywords": [
@@ -10,9 +10,9 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/nusrte/NeonUserBot",
+  "repository": "https://github.com/HerLockDev/NitroUserBot",
   "website":   "",
-  "success_url": "https://t.me/NeonUserBot",
+  "success_url": "https://t.me/NitroUserBot",
   "stack": "container",
   "env": {
     "API_KEY": {
