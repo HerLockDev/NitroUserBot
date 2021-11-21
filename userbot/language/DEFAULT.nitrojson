@@ -34,8 +34,8 @@
         },
         
         "__nitro": {
-            "NEED_PLUGIN": "❗️**Modul adı düzgün deyil.** ❗️\n**Zəhmət olmasa düzgün N I T R O modulu yazın.**\n🔶 __Modul siyahısına baxmaq üçün__ `.nitro` __yazın.__",
-            "NEED_MODULE": "ℹ️ **N I T R O Modullar siyahısı.**\n🔶 __Modullar haqqında ətraflı məlumat üçün__\n ✧ `.nitro «modul adı»` __yazın.__"
+            "NEED_PLUGIN": "Zəhmət olmasa bir Nitro modulu adı yazın.",
+            "NEED_MODULE": "Zəhmət olmasa hansı Nitro modulu üçün kömək istədiyinizi qeyd edin !!\nİstifadəsi: .nitro <modul adı>"
         },
 
         "__helpme": {
@@ -364,7 +364,7 @@
             "GOODBYE_MFRS": "`Görüşənədək... *Windows XP söndürlmə səsi*`",
             "RESTARTING": "`Bot yenidən qoşulur..`",
             "SUPPORT_GROUP": "[Buradan](http://t.me/Nitrosup) Dəstək qrupumuza çata bilərsiniz.",
-            "CREATOR": "Bu bot \n[TheOksigen](https://t.me/TheOksigen) tərəfindən hazırlanmış  \n",
+            "CREATOR": "Bu bot \n[TheOksigen](https://t.me/TheOksigen) tərəfindən hazırlanmış\n",
             "README": "[Nitro README.md](https://github.com/TheOksigen/nitro_userbot/blob/main/README.md)",
             "REPO": "[Nitro User Bot Repo](https://github.com/TheOksigen/nitro_userbot)",
             "CHECK_LOGS": "`Tapılmış Mesaj üçün istifadəçi qeydlərini yoxlayın!`"
@@ -456,47 +456,47 @@
         },
         
         "scrapers_bot": {
-            "REPLY_TO_MSG": "🔸 __İstənilən istifadəçinin mesajına cavab verin.__",
-            "REPLY_MSG": "🔸 __İstənilən istifadəçinin mesajına cavab verin.__",
-            "REPLY_BOT_ERROR": "**Bot istifadəçi sayılmır.**❌\n**Yenidən yoxlayın zəhmət olmasa!**",
-            "WORKING_ON": "__Hazırlanır...__",
-            "BLOCKED_ERROR": "__Zəhmət olmasa {chat}-ı blokdan çıxarın və yenidən cəhd edin!__ 🎴",
-            "NOT_RESPONSE": "**Botdan cavab ala bilmədim!** 📢",
-            "USER_PRIVACY": "👁‍🗨 **Məxfilik ayarlarına görə cavab ala bilmədim!**",
-            "REPLY_TO_MEME": "🌀 __İstifadəsi:__\n**Zəhmət olmasa bir mesaja cavab olaraq yazın.**\n💭 **Nümunə:** `.meme üst; alt`",
+            "REPLY_TO_MSG": "İstənilən istifadəçinin mesajına cavab verin.",
+            "REPLY_MSG": "Mesaja cavab verin",
+            "REPLY_BOT_ERROR": "Botlara cavab verə bilmərsiniz",
+            "WORKING_ON": "Hazırlanır...",
+            "BLOCKED_ERROR": "Zəhmət olmasa {chat}-ı blokdan çıxarın və yenidən cəhd edin",
+            "NOT_RESPONSE": "Botdan cavab ala bilmedim!",
+            "USER_PRIVACY": "Məxfilik ayarlarına görə cavab ala bilmədim",
+            "REPLY_TO_MEME": "İstifadəsi: Zəhmət olmasa bir mesaja cavab olaraq yazın. Nümunə: .meme üst; alt",
             "REPLY_TO_PHOTO": "Bir fotoya / stikerə / gifə cavab verin.",
-            "REPLY_TO_BOT": "**Bot istifadəçi sayılmır.**❌\n**Həqiqi bir istifadəçinin mesajına cavab verin.**",
-            "MEMING": "__Memelənir! (」ﾟﾛﾟ)｣__",
-            "MEMEBOT_BLOCKED": "**Xahiş edirəm @MemeAutobot-un blokundan çıxarın və yenidən cəhd edin.**",
-            "NOT_A_PHOTO": "**Bu şəkil deyil! Gözlə, mən onu şəkilə çevirəcəm.**",
-            "FILE_NOT_FOUND": "`Fayl tapılmadı...`",
-            "MEMIFY_CAPTION": "@NitroUserBot",
-            "NOT_VALID_FORMAT": "__Naməlum mesaj növü!__",
-            "REPLY_TO_MESSAGE": "**Zəhmət olmasa bir mesaja cavab verin.**",
-            "REPLY_TO_FILE": "**Zəhmət olmasa bir fayla cavab verin.**",
+            "REPLY_TO_BOT": "Həqiqi bir istifadəçinin mesajına cavab verin.",
+            "MEMING": "Memelənir! (」ﾟﾛﾟ)｣",
+            "MEMEBOT_BLOCKED": "Xahiş edirəm @MemeAutobot-un blokundan çıxarın və yenidən cəhd edin.",
+            "NOT_A_PHOTO": "Bu şəkil deyil! Gözlə, mən onu şəkilə çevirəcəm.",
+            "FILE_NOT_FOUND": "Fayl tapılmadı",
+            "MEMIFY_CAPTION": "Memified using @MemeAutoBot",
+            "NOT_VALID_FORMAT": "Naməlum mesaj növü!",
+            "REPLY_TO_MESSAGE": "Zəhmət olmasa bir mesaja cavab verin.",
+            "REPLY_TO_FILE": "Zəhmət olmasa bir fayla cavab verin.",
             "REPLY_USER_ERR": "Xahiş edirəm bir istifadəçinin mesajına cavab verin.",
             "MIZAH_EXE": "Musallet.exe var mı yoxdurmu baxıram...",
-            "BLOCKED_CHAT": "__Pfff deyəsən %s bloklanmısan. Zəhmət olmasa bloku aç.__",
-            "PRIVACY_ERROR": "👁‍🗨 **Məxfilik ayarlarına görə cavab ala bilmədim!**",
-            "WAIT_EDIT": "__Zəhmət olmasa gözləyin...__ 💟",
-            "SCAN_RESULT": "🦠 **Virus axtarışı bitdi.**\n**Nəticələr bunlardır**",
-            "SCANNING": "__Fayl yoxlanılır...__ 🦠",
+            "BLOCKED_CHAT": "Pfff deyəsən` %s `bloklanmısan. Zəhmət olmasa bloku aç.",
+            "PRIVACY_ERROR": "Məxfilik ayarlarına görə cavab ala bilmədim",
+            "WAIT_EDIT": "Zəhmət olmasa gözləyin...",
+            "SCAN_RESULT": "Virus axtarışı bitdi. Nəticələr bunlardır",
+            "SCANNING": "Fayl taranır...",
             "CLEAN": "Virus axtarışı bitdi. Bu fayl təmizdir. Keç!",
-            "VIRUS_DETECTED": "__Virus axtarışı bitdi.🦠\nBu fayl təhlükəlidir. Yükləməyin!__ ❌",
-            "CALCULATING_TIME": "__Tarix hesablanır..__ 🔎",
-            "PRIVACY_ERR": "👁‍🗨 **Məxfilik ayarlarına görə cavab ala bilmədim!**",
-            "CREATION_REPORT": "🔸 __Raport hazırdır!__",
-            "READING": "__Oxuyuram... A B C...__",
-            "OCR_ERROR": "__Bunu səsdən heçnə başa düşə bilmədim.\nMən başa düşə bilmədimsə deməli heç kim başa düşə bilməz. :D__",
-            "SEE_SOMETHING": "**Bir şeylər oxudum.**",
+            "VIRUS_DETECTED": "Virus axtarışı bitdi. Whopsie! Bu fayl təhlükəlidir. Yükləməyin!",
+            "CALCULATING_TIME": "Tarix hesablanır....",
+            "PRIVACY_ERR": "Məxfilik ayarlarına görə cavab ala bilmədim",
+            "CREATION_REPORT": "Raport hazırdır",
+            "READING": "Oxuyuram... A B C...",
+            "OCR_ERROR": "Şübhəsiz ki, bir şey oldu. Oxuya bilmədim.",
+            "SEE_SOMETHING": "Bir şeylər oxudum",
             "VOICY_WAITING": "Ses dinlənir... Erkan enegtarlar...",
-            "VOICY_LANG_ERR": "🔰 **Botu başlatmalı və Azərbaycanca etməlisiniz.**",
-            "VOICY_ERR": "__Allah bəlanı verməsin. Heç bir şey başa düşmədimmm..__ 🙄",
-            "HEAR_SOMETHING": "**Alalalla nəsə eşitdim səsdənn..**",
-            "CANT_REPLY_BOTS": "**Bot istifadəçi sayılmır.**❌\n**Yenidən yoxlayın zəhmət olmasa!",
-            "QUOTING": "**Sitat gətirilir...**",
-            "UNBLOCK_QUOTLY": "__Xahiş edirəm @QuotLyBot'u blokdan çıxarın və yenidən cəhd edin!__",
-            "QUOTLY_VALUE_ERR": "🔸 __Yalnız rəqəmlər daxil edə bilərsiniz!__\n**Nümunə:** `.q 2`"
+            "VOICY_LANG_ERR": "`Botu başlatmalı və Azərbaycanca etməlisiniz.`",
+            "VOICY_ERR": "`Səs pozulur, səs. Dediklərinizi anlamadım.`",
+            "HEAR_SOMETHING": "Bir şey eşitdim",
+            "CANT_REPLY_BOTS": "`Siz botlara cavab verə bilməzsiniz.`",
+            "QUOTING": "`Sitat gətirir ...`",
+            "UNBLOCK_QUOTLY": "`Xahiş edirəm @QuotLyBot'u blokdan çıxarın və yenidən cəhd edin '",
+            "QUOTLY_VALUE_ERR": "`Yalnız rəqəmlər daxil edə bilərsiniz! Nümunə: ``.q 2`"
         },
 
         "screencapture": {
@@ -565,7 +565,7 @@
             "QUERY": "Sorğu",
             "RESULT": "Nəticə",
             "NOT_FOUND": "Heçnə tapılmadı",
-            "EXAMPLE": "`Bir nümunə görmək üçün .nitro pip əmrindən istifadə edin.`"
+            "EXAMPLE": "`Bir nümunə görmək üçün .nitronitro pip əmrindən istifadə edin.`"
 
         },
 
@@ -582,23 +582,23 @@
         },
 
         "updater": {
-            "DETECTING": "`Yenilənmələr yoxlanılır...🎴`",
-            "FAILED": "**Yeniləmə alınmadı!** ❌\n**Bəzi problemlərlə qarşılaşdıq.**",
+            "DETECTING": "`Yenilənmələr yoxlanılır...`",
+            "FAILED": "Yeniləmə alınmadı! Bəzi problemlərlə qarşılaşdıq.",
             "NOT_FOUND": "qovluğu tapa bilmədi",
             "GIT_ERROR": "Git xətası!",
             "NOT_GIT": "qovluğlu bir git reposu kimi görünmür. \nAncaq botu .update now əmri ilə zorla yeniləməklə bu problemi həll edə bilərsiniz.",
             "INVALID_BRANCH": "**[UPDATER]:**` Düşünürəm ki, [N I T R O](https://t.me/NitroUserBot) botunuzu dəyişdirdiniz və öz filialınızdan istifadə edirsiniz.\nBu vəziyyət yenilənməni edənin başını qarışdırır,\nGüncəllənmə haradan çəkiləcək?\nXahiş edirəm rəsmi repodan Nitro Botunu istifadə edin.`",
-            "UPDATE": "\n✧ **N I T R O** **Ən güncəl versiyadadır! 🎴**\n✧ **Branch:** `{}`\n",
-            "WAS_UPDATE": "╭──────────────────────╮\n│ ✧ **{}** üçün yeniliklər varㅤ        │\n├──────────────────────┤\n│✧ **Yeniliklər** 🔰ㅤㅤㅤㅤㅤㅤㅤㅤㅤ    │\n╰──────────────────────╯\n\n`{}`",
-            "BIG": "**Dəyişikliklərin siyahısı çox böyük 😧 olduğu üçün onu sənə fayl şəklində atacam.** 😃",
-            "DO_UPDATE": "**Güncəlləməni etmək üçün** `\".update now\"` **komandasını istifadə edin.** ♻️",
+            "UPDATE": "\n`Botun` **Ən güncəl versiyadadır!** `Branch:` **{}**\n",
+            "WAS_UPDATE": "**{} üçün yeni güncəlləmə mövcuddur!\n\nDəyişikliklər:**\n`{}`",
+            "BIG": "`Dəyişikliklərin siyahısı çox böyükdür, ona bir fayl kimi baxmalısınız.`",
+            "DO_UPDATE": "`Güncəllənməni etmək üçün \".update now\" komandasını istifadə edin.`",
             "FORCE_UPDATE": "`Cari sabit istifadəçi bot kodu zorla sinxronizasiya olunur...`",
-            "UPDATING": "`Bot yenilənir...` 🈴",
+            "UPDATING": "`Bot yenilənir...`",
             "INVALID_APPNAME": "`[HEROKU UPDATER] Güncəlləmədən istifadə etmək üçün HEROKU_APPNAME dəyişənini təyin etməlisiniz.`",
             "INVALID_HEROKU": "{}\n`Heroku dəyişənləri səhv və ya müəyyənləşdirilmişdir.`",
-            "HEROKU_UPDATING":"╭──────────────────────╮\n│✧ **N I T R O UserBot güncəllənir** ✨   │\n├──────────────────────┤\n│✧ **Bu güncəlləmə ilə sizin botunuz**  │\n│ **ən son versiyaya yüksələcək!**⚡  ㅤ│\n├──────────────────────┤\n│✧ **Əgər problem yaranarsa, rəsmi**    │\n│**dəstək qrupumuza - @NitroSUP'a**   │\n│**gəlib bizim ilə əlaqə saxlayın.**ㅤ    ㅤ│\n├──────────────────────┤\n│✧ **@NitroUserBot** ❤️ㅤ ㅤㅤㅤㅤ  ㅤ │\n╰──────────────────────╯",              
+            "HEROKU_UPDATING": "`N I T R O⚡️𝐔𝐬𝐞𝐫𝐁𝐨𝐭🇦🇿\nUserBot-unuzun daha yaxşı olacağına əmin ola bilərsiniz. Bu müddət maksimum 10 dəqiqə çəkir.`\n@NitroUserBot",
             "ERRORS": "Qarşılaşdığımız səhflər bunlardır",
-            "SUCCESSFULLY": "**Yenilənmə uğurla başa çatdı ✅**\n\n**3 dəqiqə sonra, istədiyiniz yerdə** `.alive` **yazaraq botunuzun işləyib işləmədiyini yoxlaya bilərsiniz.**\n**Əgər problem olarsa, @NitroSup dəstək qrupumuza gəlin.** 🌹"
+            "SUCCESSFULLY": "`Yeniləmə uğurla başa çatdı! \n3 dəqiqə sonra .alive yazıb yoxlayın!  ...`"
         },
 
         "upload_download": {
@@ -660,14 +660,12 @@
             "COMMON_CHAT": "Bu istifadəçi ilə ortaq söhbətlər",
             "LINK": "Profil üçün daimi əlaqə"
         },
-	
         "www": {
-        	"SPEED": "`Sürət testi hesablanır...`",
-		"STARTED_TIME": "Başlama Tarixi: ",
-		"DOWNLOAD_SPEED": "Yükləmə Sürrəti: ",
-		"UPLOAD_SPEED": "Upload Sürrəti: ",
-		"ISP": "İnternet xidməti təminatçısı: "
+            "SPEED": "`Sürət testi hesablanır...`",
+            "STARTED_TIME": "Başlama Tarixi: ",
+            "DOWNLOAD_SPEED": "Yükləmə Sürrəti: ",
+            "UPLOAD_SPEED": "Upload Sürrəti: ",
+            "ISP": "İnternet xidməti təminatçısı: "
         }
     }
 }
-
