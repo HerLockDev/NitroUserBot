@@ -6,15 +6,15 @@
 
 # Neon UserBot
 
-from userbot import NEON_STIK, OWNERS, NEON_VERSION, SAHIBIM
+from userbot import NITRO_STIK, OWNERS, NITRO_VERSION, SAHIBIM
 from userbot import CMD_HELP
 from userbot.events import register
 
 from userbot.language import get_value
-LANG = get_value("__neon")
+LANG = get_value("__nitro")
 
 
-@register(outgoing=True, pattern="^.neon(?: |$)(.*)")
+@register(outgoing=True, pattern="^.nitro(?: |$)(.*)")
 async def neon(event):
     """ necesen """
     args = event.pattern_match.group(1).lower()
@@ -29,7 +29,7 @@ async def neon(event):
                  for i in range(0, len(sorted(list(CMD_HELP))), 5)]
 
         for i in sayfa:
-            string += f'{NEON_STIK} '
+            string += f'{NITRO_STIK} '
             for sira, a in enumerate(i):
                 string += "__" + str(a)
                 if sira == i.index(i[-1]):
@@ -54,8 +54,8 @@ async def ownerlive(owner):
         else:
             neon = "Ətağa"
         if ren == SAHIBIM:
-            str(NEON_VERSION.replace("v", ""))
-            await owner.reply(f"**{neon}** **N Σ O N aktivdir...🈴**\n**N Σ O N Version:** `{NEON_VERSION}` 🔫")
+            str(NITRO_VERSION.replace("v", ""))
+            await owner.reply(f"**{neon}** **N I T R O aktivdir...🈴**\n**N I T R O Version:** `{NITRO_VERSION}` 🔫")
         else:
             return
     else:
