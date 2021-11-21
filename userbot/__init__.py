@@ -3,7 +3,7 @@
 # Licensed under the Raphielscape Public License, Version 1.c (the "License");
 # you may not use this file except in compliance with the License
 
-# Neon User Bot #
+# Nitro User Bot #
 """ UserBot hazırlanışı """
 
 from telethon.events import callbackquery, InlineQuery, NewMessage
@@ -32,11 +32,11 @@ ASYNC_POOL = []
 
 if CONSOLE_LOGGER_VERBOSE:
     basicConfig(
-        format="%(asctime)s - @Neonsup - %(levelname)s - %(message)s",
+        format="%(asctime)s - @Nitrosup - %(levelname)s - %(message)s",
         level=DEBUG,
     )
 else:
-    basicConfig(format="%(asctime)s - @Neonsup - %(levelname)s - %(message)s",
+    basicConfig(format="%(asctime)s - @Nitrosup - %(levelname)s - %(message)s",
                 level=INFO)
 LOGS = getLogger(__name__)
 
@@ -56,8 +56,8 @@ if CONFIG_CHECK:
 
     
 # Modullar siyahısında olan emojini dəyişə bilmək üçündür.
-NEON_STIK = os.environ.get(
-    "NEON_STIK") or "🈴 "
+NITRO_STIK = os.environ.get(
+    "NITRO_STIK") or "🈴 "
 
 
 # Sudo üçündü
@@ -76,8 +76,8 @@ if LANGUAGE not in ["EN", "TR", "AZ", "UZ", "DEFAULT"]:
     LOGS.info("Namelum dil yazıdnız buna göre AZ dil işledilir.")
     LANGUAGE = "AZ"
 
-# Neon Version
-NEON_VERSION = "v1.0"
+# Nitro Version
+NITRO_VERSION = "v1.0"
 
 # Owners
 OWNERS = [1849828581, 1929222125, 1901206758, 1927465468] 
@@ -90,10 +90,10 @@ SILINEN_PLUGIN = {}
 # UserBot Session String
 STRING_SESSION = os.environ.get("STRING_SESSION", None)
 
-# Neon
+# Nitro
 BOTLOG_CHATID = int(os.environ.get("BOTLOG_CHATID", None))
 
-# NEON
+# NITRO
 BOTLOG = sb(os.environ.get("BOTLOG", "False"))
 LOGSPAMMER = sb(os.environ.get("LOGSPAMMER", "False"))
 
@@ -107,14 +107,14 @@ HEROKU_APIKEY = os.environ.get("HEROKU_APIKEY", None)
 
 
 # Yenileme üçün repo linki
-UPSTREAM_REPO_URL = "https://github.com/nusrte/NeonUserBot-old.git"
+UPSTREAM_REPO_URL = "https://github.com/nusrte/NitroUserBot-old.git"
 
 
 # Konsol gündeliy
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
 
 # SQL
-DB_URI = os.environ.get("DATABASE_URL", "sqlite:///neon.db")
+DB_URI = os.environ.get("DATABASE_URL", "sqlite:///nitro.db")
 
 # OCR API
 OCR_SPACE_API_KEY = os.environ.get("OCR_SPACE_API_KEY", None)
@@ -135,7 +135,7 @@ if WARN_MODE not in ["gmute", "gban"]:
 # Qaleriya
 QALERIYA_VAXT = int(os.environ.get("QALERIYA_VAXT", 60))
 
-# NeonUserBot
+# NitroUserBot
 CHROME_DRIVER = os.environ.get("CHROME_DRIVER", None)
 GOOGLE_CHROME_BIN = os.environ.get("GOOGLE_CHROME_BIN", None)
 
@@ -168,7 +168,7 @@ TZ_NUMBER = int(os.environ.get("TZ_NUMBER", 1))
 CLEAN_WELCOME = sb(os.environ.get("CLEAN_WELCOME", "True"))
 
 # Last.fm
-BIO_PREFIX = os.environ.get("BIO_PREFIX", "@NeonUserBot | ")
+BIO_PREFIX = os.environ.get("BIO_PREFIX", "@NitroUserBot | ")
 DEFAULT_BIO = os.environ.get("DEFAULT_BIO", None)
 
 LASTFM_API = os.environ.get("LASTFM_API", None)
@@ -205,7 +205,7 @@ PM_AUTO_BAN_LIMIT = int(os.environ.get("PM_AUTO_BAN_LIMIT", 4))
 SPOTIFY_DC = os.environ.get("SPOTIFY_DC", None)
 SPOTIFY_KEY = os.environ.get("SPOTIFY_KEY", None)
 
-PAKET_ISMI = os.environ.get("PAKET_ISMI", "@NeonUserBot Paketi")
+PAKET_ISMI = os.environ.get("PAKET_ISMI", "@NitroUserBot Paketi")
 
 # Avto qatılma
 AVTO_QATILMA = sb(os.environ.get("AVTO_QATILMA", "True"))
@@ -213,7 +213,7 @@ AVTO_QATILMA = sb(os.environ.get("AVTO_QATILMA", "True"))
 # Patternler
 PATTERNS = os.environ.get("PATTERNS", ".;!,")
 WHITELIST = get(
-    'https://raw.githubusercontent.com/nusrte/NeonUserBot-old/main/whitelist.json').json()
+    'https://raw.githubusercontent.com/nusrte/NitroUserBot-old/main/whitelist.json').json()
 
 # CloudMail.ru ve MEGA.nz
 if not os.path.exists('bin'):
@@ -305,9 +305,9 @@ def butonlastir(sayfa, moduller):
 with bot:
     if AVTO_QATILMA:
         try:
-            bot(JoinChannelRequest("@NeonSUP"))
-            bot(JoinChannelRequest("@NeonUserBot"))
-            bot(JoinChannelRequest("@NeonPlugin"))
+            bot(JoinChannelRequest("@NitroSUP"))
+            bot(JoinChannelRequest("@NitroUserBot"))
+            bot(JoinChannelRequest("@NitroPlugin"))
         except BaseException:
             pass
 
@@ -320,21 +320,21 @@ with bot:
         @tgbot.on(NewMessage(pattern='/start'))
         async def start_bot_handler(event):
             if not event.message.from_id == uid:
-                await event.reply(f'`Salam mən` @NeonUserBot`! Mən sahibimə (`@{me.username}`) kömək etmək üçün varam, yəni sənə kömək edə bilmərəm :( Amma səndə [N Σ O N](https://t.me/NeonSup) User Bot qura bilərsən Dəstək qrupumuza gəl` @Neonsup')
+                await event.reply(f'`Salam mən` @NitroUserBot`! Mən sahibimə (`@{me.username}`) kömək etmək üçün varam, yəni sənə kömək edə bilmərəm :( Amma səndə [N I T R O](https://t.me/NitroSup) User Bot qura bilərsən Dəstək qrupumuza gəl` @Nitrosup')
             else:
-                await event.reply(f'`N Σ O N User Bot İşləyir🔥`')
+                await event.reply(f'`N I T R O User Bot İşləyir🔥`')
 
         @tgbot.on(InlineQuery)  # pylint:disable=E0602
         async def inline_handler(event):
             builder = event.builder
             result = None
             query = event.text
-            if event.query.user_id == uid and query == "@NeonUserBot":
+            if event.query.user_id == uid and query == "@NitroUserBot":
                 rev_text = query[::-1]
                 veriler = (butonlastir(0, sorted(CMD_HELP)))
                 result = await builder.article(
                     f"Zəhmət olmasa sadəcə .kömek ilə kömək istəyin.",
-                    text=f"**N Σ O N Əla İşləyir 🔥** [N Σ O N User Bot](https://t.me/neonuserbot) __İşləyir...__\n\n**Yüklənən Modul Sayı:** `{len(CMD_HELP)}`\n**Sayfa:** 1/{veriler[0]}",
+                    text=f"**N I T R O Əla İşləyir 🔥** [N I T R O User Bot](https://t.me/nitrouserbot) __İşləyir...__\n\n**Yüklənən Modul Sayı:** `{len(CMD_HELP)}`\n**Sayfa:** 1/{veriler[0]}",
                     buttons=veriler[1],
                     link_preview=False
                 )
@@ -350,14 +350,14 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    "@NeonUserBot",
-                    text="""@NeonUserBot işlədin
+                    "@NitroUserBot",
+                    text="""@NitroUserBot işlədin
 Hesabınızı bot'a çevirə bilərsiz və bunları işlədə bilərsiz. Unutmayın, siz başqasının botunu idarə etməssiniz! Altdakı GitHub adresində bütün qurulum detayları var""",
                     buttons=[
-                        [custom.Button.url("Kanal", "https://t.me/neonuserbot"), custom.Button.url(
-                            "Qrup", "https://t.me/neonsup")],
+                        [custom.Button.url("Kanal", "https://t.me/nitrouserbot"), custom.Button.url(
+                            "Qrup", "https://t.me/nitrosup")],
                         [custom.Button.url(
-                            "GitHub", "https://github.com/nusrte/NeonUserBot")]
+                            "GitHub", "https://github.com/nusrte/NitroUserBot")]
                     ],
                     link_preview=False
                 )
@@ -366,11 +366,11 @@ Hesabınızı bot'a çevirə bilərsiz və bunları işlədə bilərsiz. Unutmay
         @tgbot.on(callbackquery.CallbackQuery(data=compile(b"sayfa\\((.+?)\\)")))
         async def sayfa(event):
             if not event.query.user_id == uid:
-                return await event.answer("Hey! Mənim mesajlarımı düzəltməyə çalışma! Özünə bir @NeonUserBot qur.", cache_time=0, alert=True)
+                return await event.answer("Hey! Mənim mesajlarımı düzəltməyə çalışma! Özünə bir @NitroUserBot qur.", cache_time=0, alert=True)
             sayfa = int(event.data_match.group(1).decode("UTF-8"))
             veriler = butonlastir(sayfa, CMD_HELP)
             await event.edit(
-                f"**N Σ O N Əla İşləyir🔥** [N Σ O N User Bot](https://t.me/neonuserbot) __İşləyir...__\n\n**Yüklənən Modul Sayı:** `{len(CMD_HELP)}`\n**Sayfa:** {sayfa + 1}/{veriler[0]}",
+                f"**N I T R O Əla İşləyir🔥** [N I T R O User Bot](https://t.me/nitrouserbot) __İşləyir...__\n\n**Yüklənən Modul Sayı:** `{len(CMD_HELP)}`\n**Sayfa:** {sayfa + 1}/{veriler[0]}",
                 buttons=veriler[1],
                 link_preview=False
             )
@@ -380,7 +380,7 @@ Hesabınızı bot'a çevirə bilərsiz və bunları işlədə bilərsiz. Unutmay
                 data=compile(b"bilgi\\[(\\d*)\\]\\((.*)\\)")))
         async def bilgi(event):
             if not event.query.user_id == uid:
-                return await event.answer("Hey! Mənim mesajlarımı düzəltməyə çalışma! Özünə bir @NeonUserBot qur..", cache_time=0, alert=True)
+                return await event.answer("Hey! Mənim mesajlarımı düzəltməyə çalışma! Özünə bir @NitroUserBot qur..", cache_time=0, alert=True)
 
             sayfa = int(event.data_match.group(1).decode("UTF-8"))
             komut = event.data_match.group(2).decode("UTF-8")
@@ -406,7 +406,7 @@ Hesabınızı bot'a çevirə bilərsiz və bunları işlədə bilərsiz. Unutmay
                 data=compile(b"komut\\[(.*)\\[(\\d*)\\]\\]\\((.*)\\)")))
         async def komut(event):
             if not event.query.user_id == uid:
-                return await event.answer("Hey! Mənim mesajlarımı düzəltməyə çalışma! Özünə bir @NeonUserBot qur.", cache_time=0, alert=True)
+                return await event.answer("Hey! Mənim mesajlarımı düzəltməyə çalışma! Özünə bir @NitroUserBot qur.", cache_time=0, alert=True)
 
             cmd = event.data_match.group(1).decode("UTF-8")
             sayfa = int(event.data_match.group(2).decode("UTF-8"))
@@ -447,7 +447,7 @@ Hesabınızı bot'a çevirə bilərsiz və bunları işlədə bilərsiz. Unutmay
         LOGS.info(
             "Botunuzda inline modu deaktiv edildi. "
             "Aktivleşdirmek üçün bir bot token yazın ve inline modunu açın. "
-            "Eger bunnan başqa probleminiz varsa bize yazın @Neonsup."
+            "Eger bunnan başqa probleminiz varsa bize yazın @Nitrosup."
         )
 
     try:

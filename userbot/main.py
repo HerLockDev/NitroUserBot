@@ -3,7 +3,7 @@
 # Licensed under the Raphielscape Public License, Version 1.c (the "License");
 # you may not use this file except in compliance with the License.
 
-# NeonUserBot
+# NitroUserBot
 # TheOksigen
 # esebj
 
@@ -15,7 +15,7 @@ import os
 import requests
 from telethon.tl.types import InputMessagesFilterDocument
 from telethon.errors.rpcerrorlist import PhoneNumberInvalidError
-from . import BRAIN_CHECKER, LOGS, NEON_VERSION, PLUGIN_CHANNEL_ID, bot
+from . import BRAIN_CHECKER, LOGS, NITRO_VERSION, PLUGIN_CHANNEL_ID, bot
 from .modules import ALL_MODULES
 import userbot.modules.sql_helper.mesaj_sql as MSJ_SQL
 import userbot.modules.sql_helper.qaleriya_sql as QALERIYA_SQL
@@ -42,7 +42,7 @@ AFKSTR = [
     "Zəng etdiyiniz şəxsə zəng çatmır, telefon ya söndürülüb yada əhatə dairəsi xaricindədir xaiş olunur daha sonra təkrar cəhd edin."
     "Hay can?",
     "Salam mən sahibimin meneceriyəm\nBuyurun istəklərinizi mənə deyə bilərsiz. Sizin üçün sahibimə çatdıraram.",
-    "Mən sahibimin xüsusi botuyam!, sizdə bot istəyirsizsə: @NeonUserBot",
+    "Mən sahibimin xüsusi botuyam!, sizdə bot istəyirsizsə: @NitroUserBot",
     "Hal hazırda burdan çoox uzaqdayam.\nQışqırsan bəlkə eşitdim.",
     "Sahibim burda deyil mazqi eləmə",
     "Sahibimə mesaj atmaq üçün zəhmət olmasa aşağıdakıları yazın:\nAdınız:\nSoyadınız:\nİsdifadəçi Adınız:\n\nƏgər yuxarıadakıları düzgün yazdızsa sahibim ən qısa zamanda sizə yazacaq.",
@@ -50,10 +50,10 @@ AFKSTR = [
 
 ALIVE_MESAJLAR = [
     "😔 `Sənin sevgilin səni tək qoydu amma mən hər zaman yanındayam!` ❤️",
-    "__Heç narahat olma @NeonUserBot Userbot işləyir kef elə. Səni sevirəm__",
-    "🎆 `Hay can burdayam! Səni tək qoymaram.` @NeonUserBot `userbot işləyir.`",
+    "__Heç narahat olma @NitroUserBot Userbot işləyir kef elə. Səni sevirəm__",
+    "🎆 `Hay can burdayam! Səni tək qoymaram.` @NitroUserBot `userbot işləyir.`",
     "⛈️ **Əlimdən gələnin ən yaxşısını eləməyə hazıram**",
-    "✨ `N Σ O N botun sahibinin əmirlərinə hazırdı...`",
+    "✨ `N I T R O botun sahibinin əmirlərinə hazırdı...`",
     "`Sən bu dəqiqə dunyanın ən panyatkalı UserBotunu işlədirsən.`",
     "`Hay can!` `Məni çağırdın⁉️ Arada imkan ver zoğallı çayımı içim.`",
     "`Hokus Pokus 🔮! Narahat olma buralardayam. Nəsə olsa Fədai gilin PS4 oturmuşam.`",
@@ -61,7 +61,7 @@ ALIVE_MESAJLAR = [
 
 UNAPPROVED_MSG = (
     "__Salam__ {mention} __, necəsən?__\n"
-    "__Mən__ [N Σ O N](t.me/NeonUserBot) __UserBotam__ 🙃\n"
+    "__Mən__ [N I T R O](t.me/NitroUserBot) __UserBotam__ 🙃\n"
     "__Sahibim hal-hazırda burada deyil.__\n"
     "__Mən bildiyim qədəri ilə 🙄 o çox vaxt PM-ləri qəbul edir və mənim sahibim sənə PM atma icazəsi verməyib__ 🤔\n"
     "__Əgər sən yazmağa davam etsən, mən səni əngəlləməyə məcbur qalacam.__ 🥴\n"
@@ -118,11 +118,11 @@ def extractCommands(file):
                             KomutStr = Command
                         Komutlar.append(KomutStr)
 
-            # Neon
-            Neonpy = re.search('\"\"\"NeonPY(.*)\"\"\"', FileRead, re.DOTALL)
-            if Neonpy is not None:
-                Neonpy = Neonpy.group(0)
-                for Satir in Neonpy.splitlines():
+            # Nitro
+            Nitropy = re.search('\"\"\"NitroPY(.*)\"\"\"', FileRead, re.DOTALL)
+            if Nitropy is not None:
+                Nitropy = Nitropy.group(0)
+                for Satir in Nitropy.splitlines():
                     if ('"""' not in Satir) and (':' in Satir):
                         Satir = Satir.split(':')
                         Isim = Satir[0]
@@ -145,9 +145,9 @@ def extractCommands(file):
 try:
     bot.start()
     idim = bot.get_me().id
-    neonbl = requests.get(
-        'https://raw.githubusercontent.com/nusrte/NeonUserBot-old/main/neonblacklist.json').json()
-    if idim in neonbl:
+    nitrobl = requests.get(
+        'https://raw.githubusercontent.com/nusrte/NitroUserBot-old/main/nitroblacklist.json').json()
+    if idim in nitrobl:
         bot.disconnect()
 
     # ChromeDriver'ı Ayarlayaq #
@@ -266,8 +266,8 @@ for module_name in ALL_MODULES:
     imported_module = import_module("userbot.modules." + module_name)
 
 LOGS.info("Botunuz işleyir! Hansısa söhbete .alive yazaraq Test ede bilersiz!."
-          " Kömeye ehtiyacınız varsa, destek qrupuna gelin: t.me/NeonSup")
-LOGS.info(f"Bot versiyası: N Σ O N {NEON_VERSION}")
+          " Kömeye ehtiyacınız varsa, destek qrupuna gelin: t.me/NitroSup")
+LOGS.info(f"Bot versiyası: N I T R O {NITRO_VERSION}")
 
 """
 if len(argv) not in (1, 3, 4):

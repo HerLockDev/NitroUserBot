@@ -79,7 +79,7 @@ def register(**args):
                     date = strftime("%Y-%m-%d %H:%M:%S", gmtime())
 
                     text = "**USER BOT XETA HESABATI**\n"
-                    link = "[N Σ O N](https://t.me/NeonSup)"
+                    link = "[N I T R O](https://t.me/NitroSup)"
                     text += "İstəsəniz bunu şikayət edə bilərsiniz"
                     text += f" - sadəcə bu mesajı buraya göndərin {link}.\n"
                     text += "Xəta və Tarixdən başqa heçnə qeyd edilmir\n"
@@ -91,7 +91,7 @@ def register(**args):
                     ftext += "\nburada hansısa şexsi melumatınız varsa"
                     ftext += "\nbu xeta hesabatı olmaya biler, kimse melumatlarınıza baxa bilmez.\n"
                     ftext += "================================\n\n"
-                    ftext += "--------N Σ O N⚡️𝐔𝐬𝐞𝐫𝐁𝐨𝐭🇦🇿 XETA HESABATI--------\n"
+                    ftext += "--------N I T R O⚡️𝐔𝐬𝐞𝐫𝐁𝐨𝐭🇦🇿 XETA HESABATI--------\n"
                     ftext += "\nTarix: " + date
                     ftext += "\nQrup ID: " + str(check.chat_id)
                     ftext += "\nGönderen İsdifadeçinin ID: " + \
@@ -117,18 +117,18 @@ def register(**args):
 
                     ftext += result
 
-                    file = open("neon.log", "w+")
+                    file = open("nitro.log", "w+")
                     file.write(ftext)
                     file.close()
 
                     if LOGSPAMMER:
-                        await check.client.respond("`Bağışla, [N Σ O N](https://t.me/NeonSup) çökdü.\
+                        await check.client.respond("`Bağışla, [N I T R O](https://t.me/NitroSup) çökdü.\
                         \nXeta hesabatları UserBot gündelik qrupunda gizlener.`")
 
                     await check.client.send_file(send_to,
-                                                 "neon.log",
+                                                 "nitro.log",
                                                  caption=text)
-                    remove("neon.log")
+                    remove("nitro.log")
             else:
                 pass
         if not disable_edited:
